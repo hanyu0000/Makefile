@@ -15,15 +15,15 @@ gcc -o a.out helloworld.c
 
 >a.out: helloworld.o
 >
->（Tab） gcc -o a.out helloworld.o
+>（Tab） @gcc -o a.out helloworld.o
 >
 >helloworld.o: helloworld.c
 >
->（Tab） gcc -c -o helloworld.o helloworld.c
+>（Tab） @gcc -c -o helloworld.o helloworld.c
 >
 >clean:
 >
->（Tab） rm -f a.out helloworld.o
+>（Tab） @rm -f a.out helloworld.o
 
 ！！！注意在 Makefile 中，每个命令必须以一个 Tab 字符开头，而不是空格
 
